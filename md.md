@@ -5,13 +5,13 @@
 
 \ (backslash) -
 `	(tick mark) -
-*	(asterisk) - link
+*	(asterisk) - unordered list
 _	(underscore) -
 {}	(curly braces) -
 []	(brackets) -
 ()	(parentheses) -
 #	(pound sign) - header
-+	(plus sign) -
++	(plus sign) - unordered list
 -	(minus sign ) -
 .	(dot) -
 !	(exclamation mark) -
