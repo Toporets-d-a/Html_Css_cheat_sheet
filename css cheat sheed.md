@@ -107,9 +107,9 @@ row, row-reverse, column, column-reverse;
 ```
 #### Flex-wrap (заворачивание)
 ```
-nowrap (default): all flex items will be on one line;
-wrap: flex items will wrap onto multiple lines, from top to bottom;
-wrap-reverse: flex items will wrap onto multiple lines from bottom to top;
+nowrap (по умолчанию): все флекс-элементы будут в одной строке;
+wrap: гибкие элементы будут переноситься на несколько строк сверху вниз;
+wrap-reverse: элементы flex будут переноситься на несколько строк снизу вверх;
 ```
 ##### Values:
 ```
@@ -123,9 +123,9 @@ nowrap, wrap, wrap-reverse;
 ```
 #### Flex-grow (увеличение)
 ```
-grow - If all items have it set to 1, the remaining space in the 
-container will be distributed equally to all
-Negative numbers are invalid.
+grow - если для всех элементов установлено значение 1, оставшееся место в
+Контейнер будет распределен одинаково для всех
+Отрицательные числа недействительны.
 ```
 ##### Values:
 ```
@@ -139,8 +139,8 @@ numbers (default 0);
 ```
 #### Flex-shrink (сокращение)
 ```
-This defines the ability for a flex item to shrink if necessary.
-Negative numbers are invalid.
+Это определяет способность гибкого элемента сжиматься при необходимости.
+Отрицательные числа недействительны.
 ```
 ##### Values:
 ```
