@@ -134,7 +134,7 @@ numbers (default 0);
 ##### Example:
 ```
 .item {
-  flex-grow: <number>; /* default 0 */
+  flex-grow: <number>;
 }
 ```
 #### Flex-shrink (сокращение)
@@ -149,7 +149,7 @@ numbers (default 1);
 ##### Example:
 ```
 .item {
-  flex-shrink: <number>; /* default 1 */
+  flex-shrink: <number>;
 }
 ```
 #### Flex-flow (к главному)
@@ -186,6 +186,6 @@ length, auto (default auto);
 ##### Example:
 ```
 .item {
-  flex-basis: <length>; /* default auto */
+  flex-basis: <length>;
 }
 ```
