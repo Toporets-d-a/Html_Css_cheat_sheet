@@ -85,7 +85,7 @@ Example:
 ```
 ### Item (объект)
 ```
-Negative numbers are invalid.
+Отрицательные числа недействительны.
 ```
 ### Flex (Св-во элементов в div)
 ```
