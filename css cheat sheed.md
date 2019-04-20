@@ -66,10 +66,22 @@ class="имя" для разделения типа на  классы
 row (default): left to right in (ltr); right to left in (rtl);
 row-reverse: right to left in (ltr); left to right in (rtl).
 ```
+Example:
+```
+.item {
+  flex-basis: <length> | auto; /* default auto */
+}
+```
 ### Column (колонна)
 ```
 column: same as row but top to bottom
 column-reverse: same as row-reverse but bottom to top
+```
+Example:
+```
+.item {
+  flex-basis: <length> | auto; /* default auto */
+}
 ```
 ### Item (объект)
 ```
@@ -83,11 +95,31 @@ flex: (число) - какую часть места занимает объе�
 ```
 flex-direction: column/row(по умолчанию)- какая ось главная.
 ```
+##### Values:
+```
+row, row-reverse, column, column-reverse;
+```
+##### Example:
+```
+.container {
+  flex-direction: row | row-reverse | column | column-reverse;
+}
+```
 #### Flex-wrap (заворачивание)
 ```
 nowrap (default): all flex items will be on one line;
 wrap: flex items will wrap onto multiple lines, from top to bottom;
 wrap-reverse: flex items will wrap onto multiple lines from bottom to top;
+```
+##### Values:
+```
+nowrap, wrap, wrap-reverse;
+```
+##### Example:
+```
+.container{
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
 ```
 #### Flex-grow (увеличение)
 ```
@@ -95,10 +127,30 @@ grow - If all items have it set to 1, the remaining space in the
 container will be distributed equally to all
 Negative numbers are invalid.
 ```
+##### Values:
+```
+numbers (default 0);
+```
+##### Example:
+```
+.item {
+  flex-grow: <number>; /* default 0 */
+}
+```
 #### Flex-shrink (сокращение)
 ```
 This defines the ability for a flex item to shrink if necessary.
 Negative numbers are invalid.
+```
+##### Values:
+```
+numbers (default 1);
+```
+##### Example:
+```
+.item {
+  flex-shrink: <number>; /* default 1 */
+}
 ```
 #### Flex-flow (к главному)
 ```
@@ -106,6 +158,16 @@ flex-flow (Applies to: parent flex container element)
 Это сокращенные свойства flex-direction и flex-wrap, 
 которые вместе определяют основную и поперечную оси 
 flex-контейнера. По умолчанию это строка nowrap.
+```
+##### Values:
+```
+flex-direction || flex-wrap;
+```
+##### Example:
+```
+.item {
+flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+}
 ```
 #### Flex-basis (основа)
 ```
@@ -116,4 +178,14 @@ flex-контейнера. По умолчанию это строка nowrap.
 Ключевое слово content означает «изменить его размер в зависимости от содержимого элемента», 
 это ключевое слово пока недостаточно хорошо поддерживается, поэтому сложно проверить и узнать, 
 что делают его братья max-content, min-content и fit-content.
+```
+##### Values: 
+```
+length, auto (default auto);
+```
+##### Example:
+```
+.item {
+  flex-basis: <length>; /* default auto */
+}
 ```
