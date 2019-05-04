@@ -182,9 +182,8 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 ##### Values: 
 ```
 length, auto (default auto);
-```
-##### Example:
-```
+example:
+
 .item {
   flex-basis: <length>;
 }
@@ -221,10 +220,14 @@ length, auto (default auto);
 ```
 растянуть, чтобы заполнить контейнер (все еще соблюдайте min-width / max-width)
 ```
-flex-start край полей для перекрестного старта размещается на линии перекрестного старта
-flex-end
+#####flex-start
 ```
-край крайнего края элементов помещается на линию пересечения
+рай полей для перекрестного старта размещается на линии перекрестного старта
+```
+#####flex-end
+```
+углы элементов помещается на линию пересечения
+```
 ##### Center 
 ```
 пункты центрированы в поперечной оси
@@ -232,3 +235,79 @@ flex-end
 ##### Baseline
 ```
 элементы выровнены, такие как их базовые линии.
+```
+### Background color (цвет фона) и его св-ва.
+example:
+```
+<p> {
+background color: 157, 136, 93;
+}
+```
+#### Backgrnd-image (использовать картинку как фон)
+example:
+
+<p> {
+background color: 157, 136, 93;
+}
+```
+#### Background-position (расположение картинки на фоне)
+```  
+Значения: top/centre/bottom,  left/centre/right.
+example:
+<div> {
+background- position:top, right;
+}
+```
+#### Background-repiat (заполнение фона нецелыми копиями картинки)
+  
+Значения: repeat-x/repet-y/no-repet.
+example:
+```
+<div> {
+background-repiat: no-repeat;
+}
+```
+#### Background-size вместить всю картинку.
+
+Значения: all, center, row, bottom, left, right.
+example:
+```
+<div> {
+background-size: all;
+}
+```
+#### background: - можно перечислить все св-ва, кроме Size.
+```
+<div> {
+backgrond: 
+position:top, left;
+repiat: no-repeat;
+}
+```
+##### Примечание:
+вначале пишут backgrond-color - на случай ошибки картинки.
+
+##### Linear-gradient
+Написать любые 2 цвета через запятую.
+###### example:
+```
+.background-color {
+linear-gradient: yellow, purple;
+}
+```
+##### inherit (взять цвет из родительского блока).
+example:
+```
+<div> {
+background: inherit;
+}
+```
+#### Filter (фильтр)
+Св-ва:
+blur (размытие);
+greyscale (очёрнобелить);
+example:
+```
+.Background of texts {
+filter: blur="75%"
+}
