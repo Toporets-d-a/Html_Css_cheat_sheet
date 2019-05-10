@@ -245,15 +245,15 @@ background color: 157, 136, 93;
 ```
 #### Backgrnd-image (использовать картинку как фон)
 example:
-
+```
 <p> {
 background color: 157, 136, 93;
 }
 ```
 #### Background-position (расположение картинки на фоне)
-```  
 Значения: top/centre/bottom,  left/centre/right.
 example:
+```
 <div> {
 background- position:top, right;
 }
